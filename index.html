@@ -33,7 +33,7 @@
         <a href="#projects">Projects</a>
         <a href="#volunteer">Volunteer Work</a>
         <a href="#contact">Contact</a>
-        <a class="nav-cv" href="#cv">CV</a>
+        <a class="nav-cv" href="media/taznia-tabassum-onon-cv.pdf" target="_blank" rel="noopener">CV</a>
       </nav>
       <div class="header-actions">
         <button id="theme" class="icon-button" type="button" aria-label="Switch to dark mode">
@@ -52,7 +52,7 @@
           <p class="eyebrow hero-intro"><span></span> <span class="typed-text">Computer Science Researcher</span></p>
           <h1 id="hero-title"><span class="name-line">Taznia Tabassum</span> <em class="name-line">Onon</em></h1>
           <p class="hero-summary hero-intro">I develop AI and assistive systems that help people make informed decisions in everyday care. My work spans agentic AI, computer vision, and assistive robotics.</p>
-          <div class="hero-actions hero-intro"><a class="button primary" href="#publications">View Publications</a><a class="button secondary" href="cv.html">View CV</a></div>
+          <div class="hero-actions hero-intro"><a class="button primary" href="#publications">View Publications</a><a class="button secondary" href="media/taznia-tabassum-onon-cv.pdf" target="_blank" rel="noopener">View CV</a></div>
           <p class="hero-location hero-intro"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 10-7 10s-7-5-7-10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> BRAC University · Dhaka, Bangladesh</p>
         </div>
         <figure class="hero-visual" id="portrait-stage">
@@ -110,9 +110,9 @@
     <section class="section shell split" id="about" aria-labelledby="about-title">
       <div class="section-heading reveal"><h2 id="about-title">About <em>Me</em></h2></div>
       <div class="prose reveal">
-        <p class="lead">I’m a computer science researcher and BRAC University CSE graduate based in Dhaka, Bangladesh.</p>
-        <p>My undergraduate thesis, ADECS, brought together behavioral anomaly detection and agentic decision support for elderly care. At BRAC University’s Vision Lab, I worked on real-time fall detection. At BIOSE, I helped build and evaluate a low-cost bionic arm with sensory feedback.</p>
-        <p>Through the BRAC University Research and Development Club, I helped organize research workshops and mentored more than 100 undergraduate students in literature review, methodology, writing, and poster presentation. I also co-founded <a href="https://www.onnesok.com">Onnesok</a>, where I led product operations for web tools and interactive applications.</p>
+        <p class="lead">I’m a computer science researcher and BRAC University CSE graduate interested in how AI can support people in everyday care.</p>
+        <p>A fall can look a lot like someone choosing to lie down. Questions like that are what draw me to research. I enjoy figuring out what a model pays attention to, where it makes mistakes, and what evidence would make me trust its decisions. I explore those questions through agentic AI, computer vision, and assistive robotics.</p>
+        <p>I also co-founded <a href="https://www.onnesok.com">Onnesok</a>, where I led product operations for web tools and interactive applications.</p>
       </div>
     </section>
 
@@ -451,9 +451,8 @@
         <div class="project-viewport stagger" id="project-viewport" role="region" aria-label="Project cards" tabindex="0">
         <article class="project reveal"><p class="project-field">Assistive robotics</p><h3>Bionic Arm with Sensory Feedback</h3><p>Built an affordable electromechanical prosthetic prototype that combines Arduino actuation, lightweight grasp-pattern classification, and real-time closed-loop sensory feedback.</p><ul class="tags"><li>Embedded C++</li><li>Arduino</li><li>Scikit-learn</li></ul></article>
         <article class="project reveal"><p class="project-field">Document intelligence</p><h3>Knowledge Detective</h3><p>Built a local document assistant that ingests scanned material with OCR, combines semantic and keyword retrieval, and streams answers with citations to source documents.</p><ul class="tags"><li>FastAPI</li><li>SQLite FTS5</li><li>Chroma</li><li>Ollama</li></ul></article>
-        <article class="project reveal"><p class="project-field">Computer vision</p><h3>SAFA-ReID</h3><p>Designed a multi-species wildlife re-identification model using MegaDescriptor, species-aware hard negatives, and adaptive ArcFace margins. Benchmarked closed- and open-set retrieval on WildlifeReID-10k.</p><ul class="tags"><li>PyTorch</li><li>MegaDescriptor</li><li>Metric learning</li></ul></article>
+        <article class="project reveal"><p class="project-field">Computer vision</p><h3>SAFA-ReID (WildTrackID)</h3><p>Built a multi-species wildlife re-identification system and explored MegaDescriptor and Swin Transformer backbones. Used species-aware hard negatives and adaptive ArcFace margins, and benchmarked closed- and open-set retrieval on WildlifeReID-10k.</p><ul class="tags"><li>PyTorch</li><li>MegaDescriptor</li><li>ArcFace</li></ul></article>
         <article class="project reveal"><p class="project-field">Robot learning</p><h3>Autonomous Quadruped Locomotion</h3><p>Trained a 12-degree-of-freedom robot in simulation using PPO to recover balance and maneuver around obstacles on irregular terrain.</p><ul class="tags"><li>Python</li><li>MuJoCo</li><li>PPO</li></ul></article>
-        <article class="project reveal"><p class="project-field">Visual retrieval</p><h3>WildTrackID</h3><p>Explored MegaDescriptor and Swin Transformer backbones for individual wildlife identification using ArcFace embeddings and cosine-similarity retrieval.</p><ul class="tags"><li>PyTorch</li><li>Swin Transformer</li><li>ArcFace</li></ul></article>
         <article class="project reveal"><p class="project-field">Real-time computer vision</p><h3>Face Detection &amp; Multi-Target Tracking</h3><p>Built a low-latency OpenCV pipeline for detecting faces and maintaining identities across video frames.</p><ul class="tags"><li>Python</li><li>OpenCV</li><li>Multi-target tracking</li></ul></article>
         </div>
         <button class="icon-button project-scroll" id="projects-scroll" type="button" aria-controls="project-viewport" aria-label="Scroll projects right" title="Scroll projects right" hidden>
@@ -504,7 +503,10 @@
       </section>
       <section class="cv-section reveal" id="cv" aria-labelledby="cv-title">
         <h2 id="cv-title">CV</h2>
-        <div class="prose"><p>Research, education, and technical skills in a printable CV.</p><a class="button primary" href="cv.html">Open CV</a></div>
+        <div class="contact-links">
+          <a class="button primary" href="media/taznia-tabassum-onon-cv.pdf" target="_blank" rel="noopener">View PDF</a>
+          <a class="button secondary" href="media/taznia-tabassum-onon-cv.pdf" download="Taznia-Tabassum-Onon-CV.pdf">Download CV</a>
+        </div>
       </section>
     </div>
   </main>

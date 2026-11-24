@@ -59,10 +59,10 @@ document.addEventListener("click", event => {
   if (!compactNavigation.matches && !researchMenu.contains(event.target)) researchMenu.open = false;
 });
 
-const sections = navLinks.map(link => ({
-  link,
-  section: document.querySelector(link.hash),
-})).sort((first, second) => first.section.offsetTop - second.section.offsetTop);
+const sections = navLinks
+  .filter(link => link.hash && link.getAttribute("href").startsWith("#"))
+  .map(link => ({ link, section: document.querySelector(link.hash) }))
+  .sort((first, second) => first.section.offsetTop - second.section.offsetTop);
 let activeLink = navLinks[0];
 let navFrame;
 
