@@ -721,7 +721,8 @@ h3 { font-size: 1.16rem; line-height: 1.38; }
 }
 @media (width > 1240px) {
   .header-inner { width: min(1280px, calc(100% - 56px)); gap: 16px; }
-  nav { gap: clamp(11px, 1vw, 17px); white-space: nowrap; }
+  nav { gap: clamp(12px, 1.08vw, 19px); white-space: nowrap; }
+  nav a, nav summary { font-size: .83rem; }
 }
 @media (max-width: 1240px) {
   #menu { display: grid; }
