@@ -1,0 +1,5 @@
+Devicon v2.17.0: https://github.com/devicons/devicon/tree/v2.17.0
+Simple Icons v16.0.0: https://github.com/simple-icons/simple-icons
+Statsmodels mark: https://www.statsmodels.org/stable/_static/statsmodels-logo-v2-no-text.svg
+Chroma mark: https://www.trychroma.com/img/favicon.ico
+MuJoCo mark: https://mujoco.org/favicon.ico

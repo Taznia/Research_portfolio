@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Taznia Tabassum Onon, a computer science researcher working across agentic AI, computer vision, and assistive systems.">
+  <meta name="color-scheme" content="light dark">
+  <title>Taznia Tabassum Onon | Computer Science Researcher</title>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#home"><span class="monogram" aria-hidden="true">T<span>.</span></span><span>Taznia Onon</span></a>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#home" aria-current="location">Home</a>
+        <a href="#about">About Me</a>
+        <details class="nav-group">
+          <summary>Research</summary>
+          <div class="nav-links">
+            <a href="#interests">Research Interests</a>
+            <a href="#publications">Publications</a>
+            <a href="#thesis">Thesis</a>
+            <a href="#experience">Research Experience</a>
+          </div>
+        </details>
+        <a href="#education">Education</a>
+        <a href="#awards">Awards &amp; Achievements</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#volunteer">Volunteer Work</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cv" href="#cv">CV</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme" class="icon-button" type="button" aria-label="Switch to dark mode">
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.9 13.4A9 9 0 0 1 10.6 3.1a9 9 0 1 0 10.3 10.3Z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+        </button>
+        <button id="menu" class="icon-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow hero-intro"><span></span> <span class="typed-text">Computer Science Researcher</span></p>
+          <h1 id="hero-title"><span class="name-line">Taznia Tabassum</span> <em class="name-line">Onon</em></h1>
+          <p class="hero-summary hero-intro">I develop AI and assistive systems that help people make informed decisions in everyday care. My work spans agentic AI, computer vision, and assistive robotics.</p>
+          <div class="hero-actions hero-intro"><a class="button primary" href="#publications">View Publications</a><a class="button secondary" href="cv.html">View CV</a></div>
+          <p class="hero-location hero-intro"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 10-7 10s-7-5-7-10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> BRAC University · Dhaka, Bangladesh</p>
+        </div>
+        <figure class="hero-visual" id="portrait-stage">
+          <div class="orbit-system" aria-hidden="true">
+            <div class="orbit orbit-outer"><i></i></div>
+            <div class="orbit orbit-inner"><i></i></div>
+            <div class="orbit orbit-core"><i></i></div>
+          </div>
+          <div class="portrait">
+            <svg class="portrait-art" viewBox="0 0 610 1448" width="610" height="1448" role="img" aria-labelledby="hero-portrait-title">
+              <title id="hero-portrait-title">Full-length illustration of Taznia Tabassum Onon</title>
+              <defs>
+                <image id="hero-portrait-image" href="media/portrait.svg" width="610" height="1448"/>
+                <radialGradient id="portrait-hair-edge">
+                  <stop offset=".48" stop-color="black"/>
+                  <stop offset="1" stop-color="black" stop-opacity="0"/>
+                </radialGradient>
+                <ellipse id="portrait-hair-area" cx="43" cy="347" rx="153" ry="202" fill="url(#portrait-hair-edge)"/>
+                <mask id="portrait-still-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="610" height="1448">
+                  <rect width="610" height="1448" fill="white"/>
+                  <use href="#portrait-hair-area"/>
+                </mask>
+                <mask id="portrait-hair-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="610" height="1448" mask-type="alpha">
+                  <use href="#portrait-hair-area"/>
+                </mask>
+                <radialGradient id="portrait-expression-edge">
+                  <stop offset=".63" stop-color="white"/>
+                  <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </radialGradient>
+                <mask id="portrait-expression-mask" maskUnits="userSpaceOnUse" x="310" y="166" width="110" height="68" mask-type="alpha">
+                  <ellipse cx="364" cy="199" rx="51" ry="32" fill="url(#portrait-expression-edge)"/>
+                </mask>
+              </defs>
+              <g class="portrait-hair-composite">
+                <use class="portrait-layer" href="#hero-portrait-image" mask="url(#portrait-still-mask)"/>
+                <g class="portrait-hair portrait-layer">
+                  <use href="#hero-portrait-image" mask="url(#portrait-hair-mask)"/>
+                </g>
+              </g>
+              <image class="portrait-rest-expression" href="media/portrait-rest-expression.webp" x="308" y="161" width="116" height="72" mask="url(#portrait-expression-mask)"/>
+            </svg>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <div class="highlights">
+      <ul class="shell highlight-list" aria-label="Research and academic highlights">
+        <li><a href="#thesis"><strong>98.88 / 100</strong><span>ADECS thesis · Grade A+</span></a></li>
+        <li><a href="#awards"><strong>IEEE Gold Award</strong><span>Region 10 Humanitarian Technology Challenge</span></a></li>
+        <li><a href="#awards"><strong>Champion</strong><span>BRAC University Silver Jubilee Research Conference</span></a></li>
+      </ul>
+    </div>
+
+    <section class="section shell split" id="about" aria-labelledby="about-title">
+      <div class="section-heading reveal"><h2 id="about-title">About <em>Me</em></h2></div>
+      <div class="prose reveal">
+        <p class="lead">I’m a computer science researcher and BRAC University CSE graduate based in Dhaka, Bangladesh.</p>
+        <p>My undergraduate thesis, ADECS, brought together behavioral anomaly detection and agentic decision support for elderly care. At BRAC University’s Vision Lab, I worked on real-time fall detection. At BIOSE, I helped build and evaluate a low-cost bionic arm with sensory feedback.</p>
+        <p>Through the BRAC University Research and Development Club, I helped organize research workshops and mentored more than 100 undergraduate students in literature review, methodology, writing, and poster presentation. I also co-founded <a href="https://www.onnesok.com">Onnesok</a>, where I led product operations for web tools and interactive applications.</p>
+      </div>
+    </section>
+
+    <div class="section-tint"><section class="section shell" id="interests" aria-labelledby="interests-title">
+      <div class="section-heading interest-heading reveal">
+        <h2 id="interests-title">Research <em>Interests</em></h2>
+        <button type="button" class="button secondary interest-motion" aria-controls="interest-diagrams" hidden>Pause diagrams</button>
+      </div>
+      <div class="interest-grid stagger" id="interest-diagrams">
+        <article class="interest reveal">
+          <div class="interest-scene interest-scene-agent">
+            <svg viewBox="0 0 336 184" role="img" aria-labelledby="agent-scene-title agent-scene-description">
+              <title id="agent-scene-title">Evidence-guided agent workflow</title>
+              <desc id="agent-scene-description">A request reaches an agent that checks evidence and policy before sending a recommendation for human review.</desc>
+              <defs><path id="diagram-sparkle-shape" d="M0-7Q1-1 6 0Q1 1 0 7Q-1 1-6 0Q-1-1 0-7Z"/></defs>
+              <path class="scene-wire" d="M94 92H124M212 92H242M168 51V74M168 110V133"/>
+              <path class="scene-signal scene-motion" pathLength="1" d="M94 92H124"/>
+              <path class="scene-signal scene-motion" pathLength="1" d="M168 51V74" style="--signal-delay:-3.3s"/>
+              <path class="scene-signal scene-motion" pathLength="1" d="M168 133V110" style="--signal-delay:-2.2s"/>
+              <path class="scene-signal scene-motion" pathLength="1" d="M212 92H242" style="--signal-delay:-1.1s"/>
+              <g class="scene-node"><rect x="15" y="75" width="79" height="34" rx="8"/><text x="54.5" y="92">Request</text></g>
+              <g class="scene-node"><rect x="122" y="20" width="92" height="31" rx="8"/><text x="168" y="35.5">Evidence</text></g>
+              <g class="scene-node"><rect x="122" y="133" width="92" height="31" rx="8"/><text x="168" y="148.5">Policy check</text></g>
+              <g class="scene-node scene-node-accent"><rect x="124" y="74" width="88" height="36" rx="9"/><text x="168" y="92">Agent</text></g>
+              <rect class="scene-halo scene-motion" x="119" y="69" width="98" height="46" rx="13"/>
+              <g class="scene-node"><rect x="242" y="75" width="79" height="34" rx="8"/><text x="281.5" y="92">Review</text></g>
+              <g class="scene-sparkles" aria-hidden="true">
+                <use class="scene-sparkle scene-motion" href="#diagram-sparkle-shape" x="72" y="43"/>
+                <use class="scene-sparkle scene-motion" href="#diagram-sparkle-shape" x="272" y="135"/>
+                <circle class="scene-sparkle scene-motion" cx="283" cy="42" r="2.2"/>
+              </g>
+            </svg>
+          </div>
+          <div class="interest-content"><h3>Agentic AI &amp; Decision Support</h3><p>Knowledge-guided agents, bounded decision-making, edge expert systems, and retrieval that grounds answers in evidence.</p></div>
+        </article>
+        <article class="interest reveal">
+          <div class="interest-scene interest-scene-vision">
+            <svg viewBox="0 0 336 184" role="img" aria-labelledby="vision-scene-title vision-scene-description">
+              <title id="vision-scene-title">Tracking across video frames</title>
+              <desc id="vision-scene-description">A moving figure stays within a tracking box while the timeline advances through successive frames.</desc>
+              <defs><clipPath id="vision-frame-clip"><rect x="18" y="21" width="300" height="104" rx="11"/></clipPath></defs>
+              <rect class="scene-screen" x="18" y="21" width="300" height="104" rx="11"/>
+              <g clip-path="url(#vision-frame-clip)">
+                <path class="vision-grid" d="M18 50H318M18 78H318M18 106H318M58 21V125M113 21V125M168 21V125M223 21V125M278 21V125"/>
+                <g class="vision-subject scene-motion">
+                  <path class="vision-box" d="M146 51V41H157M179 41H190V51M190 92V102H179M157 102H146V92"/>
+                  <circle class="vision-figure" cx="168" cy="55" r="5"/>
+                  <path class="vision-figure" d="M168 61L167 76M154 72L164 65L173 65L181 71M167 76L157 91"/>
+                  <path class="vision-figure vision-stride scene-motion" d="M167 76L178 91"/>
+                </g>
+              </g>
+              <text class="scene-caption" x="18" y="145">Frame sequence</text>
+              <path class="scene-wire" d="M18 159H318M18 155V163M68 155V163M118 155V163M168 155V163M218 155V163M268 155V163M318 155V163"/>
+              <path class="vision-progress scene-motion" pathLength="1" d="M18 159H318"/>
+              <circle class="vision-playhead scene-motion" cx="18" cy="159" r="4"/>
+              <g class="scene-sparkles" aria-hidden="true">
+                <use class="scene-sparkle scene-motion" href="#diagram-sparkle-shape" x="310" y="28"/>
+                <use class="scene-sparkle scene-motion" href="#diagram-sparkle-shape" x="293" y="139"/>
+                <circle class="scene-sparkle scene-motion" cx="135" cy="141" r="2.2"/>
+              </g>
+            </svg>
+          </div>
+          <div class="interest-content"><h3>Computer Vision &amp; Temporal Modeling</h3><p>Fall detection, behavioral anomalies in video, metric learning for wildlife identification, and multimodal learning.</p></div>
+        </article>
+        <article class="interest reveal">
+          <div class="interest-scene interest-scene-robotics">
+            <svg viewBox="0 0 336 184" role="img" aria-labelledby="robotics-scene-title robotics-scene-description">
+              <title id="robotics-scene-title">Closed-loop grasp feedback</title>
+              <desc id="robotics-scene-description">A sensor measures contact, a controller adjusts the actuator, and the sensor measures the resulting grip.</desc>
+              <path class="scene-wire" d="M92 121H117M219 121H244M282 137V145Q282 155 272 155H64Q54 155 54 145V137M168 105V91"/>
+              <path class="scene-signal scene-motion" pathLength="1" d="M92 121H117"/>
+              <path class="scene-signal scene-motion" pathLength="1" d="M219 121H244" style="--signal-delay:-3.3s"/>
+              <path class="scene-signal scene-motion" pathLength="1" d="M282 137V145Q282 155 272 155H64Q54 155 54 145V137" style="--signal-delay:-1.1s"/>
+              <g class="scene-node"><rect x="16" y="105" width="76" height="32" rx="8"/><text x="54" y="121">Sensor</text></g>
+              <g class="scene-node scene-node-accent"><rect x="117" y="105" width="102" height="32" rx="8"/><text x="168" y="121">Controller</text></g>
+              <g class="scene-node"><rect x="244" y="105" width="76" height="32" rx="8"/><text x="282" y="121">Actuator</text></g>
+              <path class="grip-line" d="M168 14V25M145 27H191M150 27V42M186 27V42"/>
+              <rect class="grip-object scene-motion" x="158" y="69" width="20" height="20" rx="5"/>
+              <path class="grip-line grip-jaw grip-jaw-left scene-motion" d="M150 42L135 59L139 78L153 84"/>
+              <path class="grip-line grip-jaw grip-jaw-right scene-motion" d="M186 42L201 59L197 78L183 84"/>
+              <circle class="grip-joint" cx="150" cy="42" r="3.5"/><circle class="grip-joint" cx="186" cy="42" r="3.5"/>
+              <text class="scene-caption" x="168" y="173" text-anchor="middle">Sensory feedback</text>
+              <g class="scene-sparkles" aria-hidden="true">
+                <use class="scene-sparkle scene-motion" href="#diagram-sparkle-shape" x="112" y="58"/>
+                <use class="scene-sparkle scene-motion" href="#diagram-sparkle-shape" x="227" y="45"/>
+                <circle class="scene-sparkle scene-motion" cx="257" cy="77" r="2.2"/>
+              </g>
+            </svg>
+          </div>
+          <div class="interest-content"><h3>Assistive Robotics &amp; Embedded Intelligence</h3><p>Affordable prosthetics, closed-loop sensory feedback, embedded controls, and reinforcement learning for locomotion.</p></div>
+        </article>
+      </div>
+    </section></div>
+
+    <section class="section shell" id="publications" aria-labelledby="publications-title">
+      <div class="section-heading reveal"><h2 id="publications-title">Publications</h2><p>Manuscripts and research in progress</p></div>
+      <div class="papers stagger">
+        <article class="paper reveal">
+          <div class="paper-meta"><span class="pill">First author</span><span>Submitted · 2026</span></div>
+          <div><h3>Feature-Cached Temporal Modeling for Multi-Category Behavioral Anomaly Detection in ElderlyCare Video Monitoring</h3><p class="authors"><strong>Taznia Tabassum Onon</strong>, A. Dasgupta, R. Hasan, Z. Z. Haque, and M. G. R. Alam</p><p>Submitted to <i>Engineering Applications of Artificial Intelligence</i>. Studies temporal modeling with cached features for detecting multiple categories of behavioral anomalies in elderly-care video.</p></div>
+        </article>
+        <article class="paper reveal">
+          <div class="paper-meta"><span class="pill">Second author</span><span>In preparation</span></div>
+          <div><h3>KAGE: A Knowledge-Guided Edge Expert System for Governed Agentic Assistance in Elderlycare</h3><p class="authors">R. Hasan, <strong>Taznia Tabassum Onon</strong>, A. Dasgupta, Z. Z. Haque, and M. G. R. Alam</p><p>Target journal <i>Expert Systems with Applications</i>. Explores how explicit knowledge can guide and constrain agentic assistance on edge devices.</p></div>
+        </article>
+        <article class="paper reveal">
+          <div class="paper-meta"><span class="pill">Co-author</span><span>Conference manuscript · 2026</span></div>
+          <div><h3>FedCXR-VQA: Multimodal Federated Learning with Vision-Language Fusion and PatchCore for Privacy-Preserving Chest X-Ray Pneumonia Diagnosis</h3><p class="authors">U. M. Chaman, A. Noor, <strong>Taznia Tabassum Onon</strong>, et al.</p><p>IEEE International Conference on Electrical &amp; Computer Engineering (ICECE 2026). Combines federated learning, vision-language fusion, and PatchCore for chest X-ray analysis.</p></div>
+        </article>
+        <article class="paper reveal">
+          <div class="paper-meta"><span class="pill">First author</span><span>Research in progress</span></div>
+          <div>
+            <h3>PMON: Temporal Order Modeling for Reliable Fall Detection</h3>
+            <p class="authors"><strong>Taznia Tabassum Onon</strong>, U. M. Chaman, and A. N. Zereen</p>
+            <p>Developing a framework that combines visual features, body pose, and temporal order to distinguish genuine falls from similar activities such as intentionally lying down. The study uses HARE, a five-class human activity dataset, for training on the Bright Session and testing on 2,046 Dark Session clips, including 248 falls. The goal is to reduce false alarms while maintaining high fall recall under changing lighting conditions.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="section-tint thesis-band"><section class="section shell" id="thesis" aria-labelledby="thesis-title">
+      <div class="section-heading">
+        <h2 id="thesis-title"><span class="typed-text" data-type-interval="150">Thesis</span></h2>
+      </div>
+      <div class="thesis-feature reveal">
+        <div class="thesis-copy">
+          <p class="eyebrow"><span></span> BRAC University · 2026</p>
+          <h3>ADECS</h3>
+          <p class="thesis-title">An Agentic AI Framework for Anomaly Detection and Intelligent Decision Support in Elderly Care</p>
+          <p>ADECS pairs video-based anomaly detection with an assistant that can use camera context and room-sensor readings. Its temporal model scores unusual activity, while the assistant handles text and voice questions through a separate path.</p>
+          <dl class="thesis-meta">
+            <div class="thesis-grade"><dt>Thesis grade</dt><dd><strong>A+</strong><span>98.88 / 100</span></dd></div>
+            <div class="thesis-advisor"><dt>Thesis advisor</dt><dd>Prof. Md. Golam Rabiul Alam,PhD</dd></div>
+          </dl>
+        </div>
+        <div class="thesis-map" id="adecs-architecture" role="group" aria-labelledby="adecs-map-title">
+          <div class="thesis-map-heading">
+            <h4 id="adecs-map-title">System architecture</h4>
+            <button class="button secondary thesis-motion-button" type="button" aria-controls="adecs-architecture" hidden>Pause animation</button>
+          </div>
+          <div class="thesis-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="thesis-map-row">
+            <div class="thesis-node thesis-video"><strong>Video features</strong><span>Pose, motion, objects</span></div>
+            <div class="thesis-node thesis-sensors"><strong>Room sensors</strong><span>ESP32 readings</span></div>
+            <div class="thesis-node thesis-assistant"><strong>User input</strong><span>Text or voice</span></div>
+          </div>
+          <svg class="thesis-wire" viewBox="0 0 360 36" preserveAspectRatio="none" aria-hidden="true">
+            <path class="thesis-video" d="M60 0V8Q60 17 69 17H170Q180 17 180 27V36"/>
+            <path class="thesis-sensors" d="M180 0V36"/>
+            <path class="thesis-assistant" d="M300 0V8Q300 17 291 17H190Q180 17 180 27V36"/>
+            <path class="thesis-flow-trace thesis-video" pathLength="100" d="M60 0V8Q60 17 69 17H170Q180 17 180 27V36"/>
+            <path class="thesis-flow-trace thesis-sensors" pathLength="100" d="M180 0V36"/>
+            <path class="thesis-flow-trace thesis-assistant" pathLength="100" d="M300 0V8Q300 17 291 17H190Q180 17 180 27V36"/>
+          </svg>
+          <div class="thesis-node thesis-hub"><strong>ADECS</strong><span></div>
+          <svg class="thesis-wire" viewBox="0 0 360 36" preserveAspectRatio="none" aria-hidden="true">
+            <path class="thesis-video" d="M180 0V8Q180 17 171 17H100Q90 17 90 27V36"/>
+            <path class="thesis-assistant" d="M180 0V8Q180 17 189 17H260Q270 17 270 27V36"/>
+            <path class="thesis-flow-trace thesis-branch thesis-video" pathLength="100" d="M180 0V8Q180 17 171 17H100Q90 17 90 27V36"/>
+            <path class="thesis-flow-trace thesis-branch thesis-assistant" pathLength="100" d="M180 0V8Q180 17 189 17H260Q270 17 270 27V36"/>
+          </svg>
+          <div class="thesis-lanes">
+            <div class="thesis-lane thesis-video">
+              <h5>Video anomaly detection</h5>
+              <ol class="thesis-route">
+                <li><strong>10-second windows</strong><span>20 time bins × 23 features</span></li>
+                <li><strong>BiLSTM encoder</strong><span>Reads motion in both directions</span></li>
+                <li><strong>Attention pooling</strong><span>Weights informative time bins</span></li>
+                <li><strong>MLP classifier</strong><span>Window and video-level anomaly scores</span></li>
+              </ol>
+            </div>
+            <div class="thesis-lane thesis-assistant">
+              <h5>Agentic decision support</h5>
+              <ol class="thesis-route">
+                <li><strong>Interpret the request</strong><span>Text or transcribed speech</span></li>
+                <li><strong>Gather context</strong><span>Camera, room readings, and memory</span></li>
+                <li><strong>Route the query</strong><span>General, medical, or web path</span></li>
+                <li><strong>Return a response</strong><span>Text and voice output</span></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section></div>
+
+    <section class="section shell split" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading reveal"><h2 id="experience-title">Research <em>Experience</em></h2></div>
+      <div class="timeline stagger">
+        <article class="reveal"><time datetime="2026">2026</time><div><h3>Student Researcher</h3><p class="affiliation">Vision Lab · BRAC University</p><p>Developed and evaluated video-based approaches for real-time fall detection, focusing on distinguishing falls from routine activity. Supervised by Dr. Aniqua Nusrat Zereen.</p></div></article>
+        <article class="reveal"><span>2024–2025</span><div><h3>Student Researcher, Assistive Robotics</h3><p class="affiliation">Biomedical Science and Engineering Research Center (BIOSE) · BRAC University</p><p>Designed and tested real-time finger movement and sensory feedback for a modular prosthetic arm. The work received the IEEE Region 10 Humanitarian Technology Challenge Gold Award.</p></div></article>
+        <article class="reveal"><span>2024–2026</span><div><h3>Research Coordinator &amp; Student Mentor</h3><p class="affiliation">BRAC University Research and Development Club (BuReD)</p><p>Coordinated workshops and symposiums for more than 300 participants and mentored more than 100 students in literature review, research methods, and academic presentation.</p></div></article>
+      </div>
+    </section>
+
+    <div class="section-tint"><section class="section shell split" id="education" aria-labelledby="education-title">
+      <div class="section-heading"><h2 id="education-title"><span class="typed-text" data-type-interval="105">Education</span></h2></div>
+      <div class="timeline stagger">
+        <article class="reveal"><span>2022–2026</span><div><h3>B.Sc. in Computer Science &amp; Engineering</h3><p class="affiliation">BRAC University · Dhaka, Bangladesh</p><p>CGPA <strong>3.78 / 4.00</strong>. Merit scholar, Dean’s List, and Vice Chancellor’s List.</p><p>Undergraduate thesis <a href="#thesis">ADECS</a>, supervised by Prof. Md. Golam Rabiul Alam.</p></div></article>
+        <article class="reveal"><span>2019–2021</span><div><h3>Higher Secondary Certificate in Science</h3><p class="affiliation">Motijheel Ideal School and College</p><p>GPA 5.00 / 5.00</p></div></article>
+        <article class="reveal"><span>2018–2019</span><div><h3>Secondary School Certificate in Science</h3><p class="affiliation">Ideal School and College, Mugda Branch</p><p>GPA 4.94 / 5.00</p></div></article>
+      </div>
+      <svg class="education-art" viewBox="0 0 1254 1250" role="img" aria-labelledby="study-title">
+        <title id="study-title">Anime-style illustration of a university student reading an open book</title>
+        <defs>
+          <filter id="education-eye-feather" x="-10%" y="-20%" width="120%" height="140%">
+            <feGaussianBlur stdDeviation="2"/>
+          </filter>
+          <mask id="education-eye-windows" maskUnits="userSpaceOnUse" x="0" y="0" width="1254" height="1254">
+            <path fill="white" filter="url(#education-eye-feather)" d="M524 391C537 384 552 381 571 380C584 380 592 387 596 392C591 399 573 405 558 405C542 405 530 399 524 391ZM685 381C686 369 703 361 722 358C734 357 745 358 751 361C748 373 731 384 713 386C699 389 688 387 685 381Z"/>
+          </mask>
+        </defs>
+        <g class="education-art-reveal">
+          <image id="education-portrait" href="media/education-anime-v2.png" width="1254" height="1254"/>
+          <g mask="url(#education-eye-windows)">
+            <use class="education-gaze" href="#education-portrait"/>
+          </g>
+        </g>
+      </svg>
+    </section></div>
+
+    <section class="section shell" id="awards" aria-labelledby="awards-title">
+      <div class="section-heading reveal"><h2 id="awards-title">Awards &amp; <em>Achievements</em></h2></div>
+      <div class="gallery-filters" role="group" aria-label="Filter awards"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="research" aria-pressed="false">Research</button><button type="button" data-filter="innovation" aria-pressed="false">Innovation</button><button type="button" data-filter="honors" aria-pressed="false">Honors</button></div>
+      <div class="gallery stagger" id="gallery">
+        <article class="reveal" data-group="research"><a href="media/champion_poster_img2.jpeg"><span class="media-frame"><img src="media/champion_poster_img2.jpeg" alt="Track 2 poster championship at BRAC University’s Silver Jubilee Research Conference" loading="lazy"></span><span class="gallery-caption"><span>November 2026 · BRAC University</span><strong>Track 2 Poster Champion</strong></span></a></article>
+        <article class="reveal" data-group="research"><a href="media/gold_award.jpeg"><span class="media-frame"><img src="media/gold_award.jpeg" alt="IEEE humanitarian technology gold award" loading="lazy"></span><span class="gallery-caption"><span>October 2024 · IEEE Region 10</span><strong>Humanitarian Technology Gold Award</strong></span></a></article>
+        <article class="reveal" data-group="innovation"><a href="media/innovation_grant.jpeg"><span class="media-frame"><img src="media/innovation_grant.jpeg" alt="University Innovation Hub Program grant event" loading="lazy"></span><span class="gallery-caption"><span>2025–2026 · University Innovation Hub Program</span><strong>BDT 145,000 in Seed &amp; Pre-Seed Grants</strong></span></a></article>
+        <article class="reveal" data-group="honors"><a href="media/VC_recog_award.jpeg"><span class="media-frame"><img src="media/VC_recog_award.jpeg" alt="BRAC University award ceremony" loading="lazy"></span><span class="gallery-caption"><span>Fall 2025 · BRAC University</span><strong>Vice Chancellor’s Special Recognition Award</strong></span></a></article>
+        <article class="reveal" data-group="innovation"><a href="media/Iotrix%20awardjpeg.jpeg"><span class="media-frame"><img src="media/Iotrix%20awardjpeg.jpeg" alt="IOTrix hackathon award" loading="lazy"></span><span class="gallery-caption"><span>November 2025 · CUET</span><strong>IOTrix National Hackathon Second Runner-Up</strong></span></a></article>
+        <article class="reveal" data-group="honors"><a href="media/Honourable_mention.jpeg"><span class="media-frame"><img src="media/Honourable_mention.jpeg" alt="International Science and Invention Fair recognition" loading="lazy"></span><span class="gallery-caption"><span>October 2025 · ISIF Bangladesh</span><strong>Honourable Mention</strong></span></a></article>
+        <article class="reveal" data-group="innovation"><a href="media/bdapps_award1.jpeg"><span class="media-frame"><img src="media/bdapps_award1.jpeg" alt="ShooterX award at the bdapps Innovation Summit" loading="lazy"></span><span class="gallery-caption"><span>August 2025 · bdapps Innovation Summit</span><strong>ShooterX Second Runner-Up</strong></span></a></article>
+        <article class="reveal" data-group="research"><a href="media/Genesis_award1.jpeg"><span class="media-frame"><img src="media/Genesis_award1.jpeg" alt="GenesisX poster competition award" loading="lazy"></span><span class="gallery-caption"><span>December 2024 · BuReD</span><strong>GenesisX Poster First Runner-Up</strong></span></a></article>
+        <article class="reveal" data-group="honors"><a href="media/Best_CA_award.jpeg"><span class="media-frame"><img src="media/Best_CA_award.jpeg" alt="Intellectium campus ambassador award" loading="lazy"></span><span class="gallery-caption"><span>March 2024 · Intellectium</span><strong>Best Campus Ambassador</strong></span></a></article>
+      </div>
+      <dialog class="lightbox" id="lightbox" aria-labelledby="photo-caption">
+        <div class="photo-panel"><form method="dialog"><button class="icon-button close-photo" aria-label="Close photo" autofocus>×</button></form><img id="full-photo" alt=""><p id="photo-caption"></p><div class="photo-controls"><button class="button secondary" id="previous-photo" type="button">Previous</button><button class="button secondary" id="next-photo" type="button">Next</button></div></div>
+      </dialog>
+    </section>
+
+    <div class="section-tint skills-band">
+      <section class="section shell" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading skills-heading reveal">
+          <h2 id="skills-title">Technical <em>Skills</em></h2>
+          <button class="button secondary skills-motion-button" type="button" aria-controls="skills-gravity skills-marquee" hidden>Pause animation</button>
+        </div>
+        <svg class="skill-symbols" aria-hidden="true" width="0" height="0" focusable="false">
+          <defs>
+            <symbol id="skill-database" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></symbol>
+            <symbol id="skill-transformer" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 6h10M7 18h10M6.5 7.5l11 9m-11 0 11-9"/></symbol>
+            <symbol id="skill-temporal" viewBox="0 0 24 24"><path d="M3 19h18M4 15l4-4 4 2 5-7 3 3"/><circle cx="17" cy="6" r="1.5"/></symbol>
+            <symbol id="skill-metric" viewBox="0 0 24 24"><path d="M5 18h14M6 18V7m4 8 4-5 4 3"/><circle cx="10" cy="15" r="1"/><circle cx="14" cy="10" r="1"/><circle cx="18" cy="13" r="1"/></symbol>
+            <symbol id="skill-hybrid" viewBox="0 0 24 24"><path d="M4 5h7v6H4zM13 13h7v6h-7zM11 8h5v5M7 11v5h6"/></symbol>
+            <symbol id="skill-ocr" viewBox="0 0 24 24"><path d="M4 8V4h4m8 0h4v4m0 8v4h-4m-8 0H4v-4M8 10h8m-8 4h6"/></symbol>
+            <symbol id="skill-retrieval" viewBox="0 0 24 24"><circle cx="10" cy="10" r="5"/><path d="m14 14 5 5M8 10h4"/></symbol>
+            <symbol id="skill-servo" viewBox="0 0 24 24"><rect x="4" y="9" width="11" height="9" rx="2"/><path d="M9.5 9V5H18m0-2v4m-3 7h5"/></symbol>
+            <symbol id="skill-sensors" viewBox="0 0 24 24"><path d="M6 8a8 8 0 0 1 12 0M8 11a5 5 0 0 1 8 0m-6 3a2.7 2.7 0 0 1 4 0"/><circle cx="12" cy="18" r="1"/></symbol>
+            <symbol id="skill-haptic" viewBox="0 0 24 24"><path d="M4 8v8m4-10v12m4-14v16m4-14v12m4-10v8"/></symbol>
+            <symbol id="skill-experiment" viewBox="0 0 24 24"><path d="M9 3h6m-5 0v7l-5 8a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-8V3M8 15h8"/></symbol>
+            <symbol id="skill-ablation" viewBox="0 0 24 24"><rect x="4" y="5" width="7" height="6" rx="1"/><rect x="4" y="14" width="7" height="6" rx="1"/><path d="M14 8h6m-6 9h6"/></symbol>
+            <symbol id="skill-analysis" viewBox="0 0 24 24"><path d="M4 4v16h16M8 16v-4m4 4V8m4 8V6"/></symbol>
+            <symbol id="skill-literature" viewBox="0 0 24 24"><path d="M12 6c-3-2-6-2-9-1v13c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1Zm0 0v13"/></symbol>
+            <symbol id="skill-writing" viewBox="0 0 24 24"><path d="M12 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6M10 14l1-4 7-7 3 3-7 7-4 1Z"/></symbol>
+          </defs>
+        </svg>
+        <div class="skills-orbit" aria-hidden="true">
+          <video id="skills-gravity" muted loop playsinline preload="none" poster="media/skills-gravity-poster.webp">
+            <source src="media/skills-gravity.webm" type="video/webm">
+          </video>
+        </div>
+        <div class="skills-marquee" id="skills-marquee">
+          <div class="skill-lane">
+            <div class="skill-track" data-speed="32">
+              <ul class="skill-list" role="list">
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/python.svg" width="22" height="22" alt=""></span><span>Python</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/cplusplus.svg" width="22" height="22" alt=""></span><span>C/C++</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-database"/></svg></span><span>SQL</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/javascript.svg" width="22" height="22" alt=""></span><span>JavaScript</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/typescript.svg" width="22" height="22" alt=""></span><span>TypeScript</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/dart.svg" width="22" height="22" alt=""></span><span>Dart</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/pandas.svg" width="22" height="22" alt=""></span><span>Pandas</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/numpy.svg" width="22" height="22" alt=""></span><span>NumPy</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/scipy.svg" width="22" height="22" alt=""></span><span>SciPy</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/statsmodels.svg" width="22" height="22" alt=""></span><span>Statsmodels</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/pytorch.svg" width="22" height="22" alt=""></span><span>PyTorch</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/tensorflow.svg" width="22" height="22" alt=""></span><span>TensorFlow</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/opencv.svg" width="22" height="22" alt=""></span><span>OpenCV</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/scikitlearn.svg" width="22" height="22" alt=""></span><span>Scikit-learn</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-transformer"/></svg></span><span>Transformers</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-temporal"/></svg></span><span>Temporal modeling</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-metric"/></svg></span><span>Metric learning</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-hybrid"/></svg></span><span>Hybrid RAG</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-ocr"/></svg></span><span>OCR</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-retrieval"/></svg></span><span>Semantic retrieval</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img class="skill-mark-contrast" src="media/skills/ollama.svg" width="22" height="22" alt=""></span><span>Ollama</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/chroma.png" width="22" height="22" alt=""></span><span>Chroma</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/sqlite.svg" width="22" height="22" alt=""></span><span>SQLite FTS5</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-lane skill-lane-reverse">
+            <div class="skill-track" data-speed="24">
+              <ul class="skill-list" role="list">
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/mujoco.png" width="22" height="22" alt=""></span><span>MuJoCo</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img class="skill-mark-contrast" src="media/skills/ros.svg" width="22" height="22" alt=""></span><span>ROS</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/arduino.svg" width="22" height="22" alt=""></span><span>Arduino</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/cplusplus.svg" width="22" height="22" alt=""></span><span>Embedded C++</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-servo"/></svg></span><span>Servo control</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-sensors"/></svg></span><span>Sensor integration</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-haptic"/></svg></span><span>Haptic feedback</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/fastapi.svg" width="22" height="22" alt=""></span><span>FastAPI</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img class="skill-mark-contrast" src="media/skills/django.svg" width="22" height="22" alt=""></span><span>Django</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img class="skill-mark-contrast" src="media/skills/nextdotjs.svg" width="22" height="22" alt=""></span><span>Next.js</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/react.svg" width="22" height="22" alt=""></span><span>React</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/nodedotjs.svg" width="22" height="22" alt=""></span><span>Node.js</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/flutter.svg" width="22" height="22" alt=""></span><span>Flutter</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/postgresql.svg" width="22" height="22" alt=""></span><span>PostgreSQL</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/firebase.svg" width="22" height="22" alt=""></span><span>Firebase</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/git.svg" width="22" height="22" alt=""></span><span>Git</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img src="media/skills/linux.svg" width="22" height="22" alt=""></span><span>Linux</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-experiment"/></svg></span><span>Experimental design</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-ablation"/></svg></span><span>Ablation studies</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-analysis"/></svg></span><span>Statistical analysis</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-literature"/></svg></span><span>Literature synthesis</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#skill-writing"/></svg></span><span>Scientific writing</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><img class="skill-mark-contrast" src="media/skills/latex.svg" width="22" height="22" alt=""></span><span>LaTeX</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section shell projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading project-heading reveal"><h2 id="projects-title">Projects</h2></div>
+      <div class="project-carousel">
+        <div class="project-viewport stagger" id="project-viewport" role="region" aria-label="Project cards" tabindex="0">
+        <article class="project reveal"><p class="project-field">Assistive robotics</p><h3>Bionic Arm with Sensory Feedback</h3><p>Built an affordable electromechanical prosthetic prototype that combines Arduino actuation, lightweight grasp-pattern classification, and real-time closed-loop sensory feedback.</p><ul class="tags"><li>Embedded C++</li><li>Arduino</li><li>Scikit-learn</li></ul></article>
+        <article class="project reveal"><p class="project-field">Document intelligence</p><h3>Knowledge Detective</h3><p>Built a local document assistant that ingests scanned material with OCR, combines semantic and keyword retrieval, and streams answers with citations to source documents.</p><ul class="tags"><li>FastAPI</li><li>SQLite FTS5</li><li>Chroma</li><li>Ollama</li></ul></article>
+        <article class="project reveal"><p class="project-field">Computer vision</p><h3>SAFA-ReID</h3><p>Designed a multi-species wildlife re-identification model using MegaDescriptor, species-aware hard negatives, and adaptive ArcFace margins. Benchmarked closed- and open-set retrieval on WildlifeReID-10k.</p><ul class="tags"><li>PyTorch</li><li>MegaDescriptor</li><li>Metric learning</li></ul></article>
+        <article class="project reveal"><p class="project-field">Robot learning</p><h3>Autonomous Quadruped Locomotion</h3><p>Trained a 12-degree-of-freedom robot in simulation using PPO to recover balance and maneuver around obstacles on irregular terrain.</p><ul class="tags"><li>Python</li><li>MuJoCo</li><li>PPO</li></ul></article>
+        <article class="project reveal"><p class="project-field">Visual retrieval</p><h3>WildTrackID</h3><p>Explored MegaDescriptor and Swin Transformer backbones for individual wildlife identification using ArcFace embeddings and cosine-similarity retrieval.</p><ul class="tags"><li>PyTorch</li><li>Swin Transformer</li><li>ArcFace</li></ul></article>
+        <article class="project reveal"><p class="project-field">Real-time computer vision</p><h3>Face Detection &amp; Multi-Target Tracking</h3><p>Built a low-latency OpenCV pipeline for detecting faces and maintaining identities across video frames.</p><ul class="tags"><li>Python</li><li>OpenCV</li><li>Multi-target tracking</li></ul></article>
+        </div>
+        <button class="icon-button project-scroll" id="projects-scroll" type="button" aria-controls="project-viewport" aria-label="Scroll projects right" title="Scroll projects right" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="7" width="19" height="10" rx="5"/><path d="M7 12h5"/><circle cx="16" cy="12" r="1.6" fill="currentColor" stroke="none"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <div class="section-tint volunteer-band">
+      <section class="section shell volunteer-section" id="volunteer" aria-labelledby="volunteer-title">
+        <div class="section-heading reveal"><h2 id="volunteer-title">Volunteer <em>Work</em></h2></div>
+        <div class="volunteer-grid stagger">
+          <article class="volunteer-card reveal">
+            <h3>BRAC University Research and Development Club</h3>
+            <p class="volunteer-role">Student mentoring &amp; research workshops · 2024–2026</p>
+            <p>Helped organize research workshops and mentored undergraduates in literature review, research methods, and poster presentation.</p>
+          </article>
+          <article class="volunteer-card reveal">
+            <h3>Project Proyash</h3>
+            <p class="volunteer-role">Community outreach · May 2024–June 2025</p>
+            <p>Coordinated online volunteer recruitment and helped share educational programs through social media.</p>
+          </article>
+          <article class="volunteer-card reveal">
+            <h3>Ecollab International</h3>
+            <p class="volunteer-role">Workshop facilitation · September 2024–June 2025</p>
+            <p>Facilitated cross-cultural workshops on youth leadership, empathy, and global citizenship.</p>
+          </article>
+          <article class="volunteer-card reveal">
+            <h3>Intellectium</h3>
+            <p class="volunteer-role">Campus outreach</p>
+            <p>Helped build student volunteer networks through campus outreach and received the Best Campus Ambassador award in 2024.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <div class="section shell contact-cv">
+      <section class="contact reveal" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <div class="prose">
+          <p>Get in touch about research in human-centered AI and assistive technology.</p>
+          <div class="contact-links">
+            <a class="email" href="mailto:taznia.tabassum@g.bracu.ac.bd">taznia.tabassum@g.bracu.ac.bd</a>
+            <a class="button secondary" href="https://github.com/Taznia/">GitHub</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/taznia-tabassum-onon-b26436261/">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+      <section class="cv-section reveal" id="cv" aria-labelledby="cv-title">
+        <h2 id="cv-title">CV</h2>
+        <div class="prose"><p>Research, education, and technical skills in a printable CV.</p><a class="button primary" href="cv.html">Open CV</a></div>
+      </section>
+    </div>
+  </main>
+  <footer class="shell site-footer"><span>© 2026 Taznia Tabassum Onon</span><a href="#home">Back to top</a></footer>
+</body>
+</html>
