@@ -283,8 +283,8 @@ const stage = document.querySelector("#portrait-stage");
 const portrait = stage.querySelector(".portrait");
 const portraitExpression = portrait.querySelector(".portrait-rest-expression");
 const canvas = document.querySelector("#particles");
+const introWeb = canvas.parentElement;
 const context = canvas.getContext("2d");
-let pointer = null;
 
 function smileAtVisitor() {
   if (!reducedMotion.matches) portraitExpression.classList.add("is-smiling");
@@ -318,22 +318,18 @@ function moveStage(x, y) {
   stage.style.setProperty("--stage-y", `${y * 10}px`);
 }
 
-function clearPointer() {
-  pointer = null;
-  moveStage(0, 0);
-}
-
 hero.addEventListener("pointermove", event => {
   if (reducedMotion.matches || event.pointerType === "touch") return;
   const bounds = hero.getBoundingClientRect();
-  pointer = { x: event.clientX - bounds.left, y: event.clientY - bounds.top };
-  moveStage(pointer.x / bounds.width - .5, pointer.y / bounds.height - .5);
+  moveStage((event.clientX - bounds.left) / bounds.width - .5, (event.clientY - bounds.top) / bounds.height - .5);
 }, { passive: true });
-hero.addEventListener("pointerleave", clearPointer);
+hero.addEventListener("pointerleave", () => moveStage(0, 0));
 
 if (context) {
   const linkDistance = 178;
   const hoverDistance = 205;
+  const maxDots = 156;
+  let pointer = null;
   let width;
   let height;
   let dots = [];
@@ -364,7 +360,7 @@ if (context) {
     canvas.width = Math.round(width * scale);
     canvas.height = Math.round(height * scale);
     context.setTransform(scale, 0, 0, scale, 0, 0);
-    const count = Math.min(116, Math.max(28, Math.round(width * height / 10600)));
+    const count = Math.min(maxDots, Math.max(28, Math.round(width * height / 10600)));
     dots = dots.slice(0, count);
     while (dots.length < count) dots.push(createDot());
   }
@@ -424,27 +420,37 @@ if (context) {
   }
 
   updateSize();
-  if ("ResizeObserver" in window) new ResizeObserver(updateSize).observe(hero);
+  if ("ResizeObserver" in window) new ResizeObserver(updateSize).observe(introWeb);
   else window.addEventListener("resize", updateSize);
   if ("IntersectionObserver" in window) {
     new IntersectionObserver(([entry]) => {
       visible = entry.isIntersecting;
-      hero.classList.toggle("is-outside", !visible);
-      if (!visible) clearPointer();
+      if (!visible) pointer = null;
       refresh();
+    }).observe(introWeb);
+    new IntersectionObserver(([entry]) => {
+      hero.classList.toggle("is-outside", !entry.isIntersecting);
+      if (!entry.isIntersecting) moveStage(0, 0);
     }).observe(hero);
   }
 
-  hero.addEventListener("click", event => {
+  introWeb.addEventListener("pointermove", event => {
+    if (reducedMotion.matches || event.pointerType === "touch") return;
+    const bounds = introWeb.getBoundingClientRect();
+    pointer = { x: event.clientX - bounds.left, y: event.clientY - bounds.top };
+  }, { passive: true });
+  introWeb.addEventListener("pointerleave", () => { pointer = null; });
+
+  introWeb.addEventListener("click", event => {
     if (reducedMotion.matches || event.target.closest("a, button") || event.detail === 0) return;
-    const bounds = hero.getBoundingClientRect();
+    const bounds = introWeb.getBoundingClientRect();
     const x = event.clientX - bounds.left;
     const y = event.clientY - bounds.top;
     for (let count = 0; count < 4; count++) dots.push(createDot(x, y));
-    if (dots.length > 126) dots.splice(0, dots.length - 126);
+    if (dots.length > maxDots + 10) dots.splice(0, dots.length - maxDots - 10);
   });
   document.addEventListener("visibilitychange", refresh);
-  reducedMotion.addEventListener("change", () => { clearPointer(); refresh(); });
+  reducedMotion.addEventListener("change", () => { pointer = null; moveStage(0, 0); refresh(); });
   theme.addEventListener("click", refresh);
 }
 

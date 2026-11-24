@@ -88,6 +88,7 @@ nav a:hover, nav a[aria-current], nav summary:hover, nav summary:has(+ .nav-link
 .sun, [data-theme="dark"] .moon, #menu { display: none; }
 [data-theme="dark"] .sun { display: block; }
 
+.intro-web { isolation: isolate; position: relative; overflow: clip; }
 .hero { isolation: isolate; position: relative; overflow: clip; background: radial-gradient(ellipse at 73% 49%, var(--hero-wash), transparent 63%); }
 #particles {
   position: absolute;
@@ -166,6 +167,8 @@ h1 em, h2 em { color: var(--accent); font-weight: 500; }
 .highlight-list a:hover strong { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .section { padding-block: clamp(64px, 7.4vw, 108px); }
 #about { padding-block-start: clamp(34px, 4.2vw, 68px); }
+#about > .prose { position: relative; isolation: isolate; }
+#about > .prose::before { content: ""; position: absolute; inset: -28px -18px; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at 40% 50%, var(--copy-glow), transparent 76%); }
 :is(#interests, #publications) { padding-block-start: clamp(32px, 3.6vw, 56px); }
 :is(#awards, #volunteer) { padding-block-start: clamp(25px, 3.2vw, 45px); }
 .section-heading { margin-bottom: 30px; }
